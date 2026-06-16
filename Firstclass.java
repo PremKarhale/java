@@ -7,11 +7,39 @@ class Firstclass{
         //  ** 
         //  *** 
         //  ****
-        System.out.print("*\n**\n***\n****");    
+        System.out.println("*\n**\n***\n****");    
+
+        // variables
+        String name = "Prem Karhale";
+        int age = 42;
+        double price = 550;
+        int a  = 23;
+        int b = 63;
+         a = 2;
+        System.out.println(a); // 2
+
     
 
     }
 }
+
+// data type -- > primitive datatype and non primitive datatype 
+// primitive = that are predefiend or universal 
+// int 
+// boolean
+// float
+// short 
+// byte
+// char
+// long 
+// double
+
+// non primitve datatype = which are customisable or created by developer according to its own need 
+// array 
+// string 
+// class 
+// object 
+// interface 
 
 
 
