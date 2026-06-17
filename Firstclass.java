@@ -17,6 +17,8 @@ class Firstclass{
         int b = 63;
          a = 2;
         System.out.println(a); // 2
+        int sum = a + b;
+        System.out.println(sum);
 
     
 
