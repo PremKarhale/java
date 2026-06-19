@@ -30,13 +30,17 @@ class usrinput{
         //     System.out.println("its sub is :"+sub);
 
         // }
-
-        switch(btn){
+        int button = sc.nextInt();
+        switch(button){
             case 1 :System.out.println("hello");
             break;
-            case 2 : sysout
+            case 2 :System.out.println("namaste");
+            break;
+            case 3 :System.out.println("hi");
+            break; 
+            default: System.out.println("invalid button");
         }
-    }
+    } 
     
 
 }
