@@ -68,13 +68,13 @@ class usrinput{
         // System.out.println("Total sum of natural no is : "+sum);
 
         // or 
-        int n = 4;
-        int sum =0;
-        for (int i =1;i<=4;i++){
-            sum = sum + i;
+        // int n = 4;
+        // int sum =0;
+        // for (int i =1;i<=4;i++){
+        //     sum = sum + i;
 
-        }
-        System.out.println(sum);
+        // }
+        // System.out.println(sum);
 
 
 
