@@ -76,6 +76,20 @@ class usrinput{
         // }
         // System.out.println(sum);
 
+        // print the table by taking input from the user n 
+        char choice = 'T';
+        while(choice =='T' || choice == 't'){
+        System.out.print("enter the no to get his table : ");
+        int n = sc.nextInt();
+        for (int i = 1;i<=10;i++){
+            System.out.println(n + "*"+i + "="+ n*i);
+        }
+        System.out.println("Do you want to get the other table (T/F):");
+        choice = sc.next().charAt(0);
+
+        }
+        System.out.println("Loop terminated sucessfully !");
+
 
 
 
