@@ -30,17 +30,61 @@ class usrinput{
         //     System.out.println("its sub is :"+sub);
 
         // }
-        int button = sc.nextInt();
-        switch(button){
-            case 1 :System.out.println("hello");
-            break;
-            case 2 :System.out.println("namaste");
-            break;
-            case 3 :System.out.println("hi");
-            break; 
-            default: System.out.println("invalid button");
+        // switch case 
+        // int button = sc.nextInt();
+        // switch(button){
+        //     case 1 :System.out.println("hello");
+        //     break;
+        //     case 2 :System.out.println("namaste");
+        //     break;
+        //     case 3 :System.out.println("hi");
+        //     break; 
+        //     default: System.out.println("invalid button");
+
+        // for loop syntax for(initialisation , condition , updation )
+        // for (int i = 0;i<100;i++){
+        //     System.out.println("i am good !");    // simple for loop 
+        // }
+        // }
+        // int i =0;  initialisation
+        // while (i<11){
+        //     System.out.println(i);
+        //     i = i + 1;
+
+        // }
+        // do{
+        //     System.out.println(i);
+        //     i = i+1;
+
+        // }while(i<11);
+
+        // Print the sum of firt 4 natural numbers 
+        // int n = 1;
+        // int sum = 0 ;
+        // while(n<=4){
+        //     sum = sum + n;
+        //     n++;
+        // }
+        // System.out.println("Total sum of natural no is : "+sum);
+
+        // or 
+        int n = 4;
+        int sum =0;
+        for (int i =1;i<=4;i++){
+            sum = sum + i;
+
         }
+        System.out.println(sum);
+
+
+
+
+
+
+
+
+
     } 
+}
     
 
-}
