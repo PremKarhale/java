@@ -79,7 +79,7 @@ class usrinput{
         // print the table by taking input from the user n 
         char choice = 'T';
         while(choice =='T' || choice == 't'){
-        System.out.print("enter the no to get his table : ");
+        System.out.print("Enter the no to get his table : ");
         int n = sc.nextInt();
         for (int i = 1;i<=10;i++){
             System.out.println(n + "*"+i + "="+ n*i);
