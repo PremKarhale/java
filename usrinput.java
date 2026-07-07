@@ -92,11 +92,6 @@ class usrinput{
 
 
 
-
-
-
-
-
     } 
 }
     
