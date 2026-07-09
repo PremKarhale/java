@@ -45,16 +45,53 @@ class pattern{
         // }
 
         // 5) inverted half pyramid
-        for (int i =1; i<=4; i ++){
-            for(int j =1;j<=4-i;j++){
-                System.out.print(" ");
-            }
-            for(int j=1;j<=i;j++){
-                System.out.print("8");
-            }
-            System.out.println();
-        }
+        // for (int i =1; i<=4; i ++){
+        //     for(int j =1;j<=4-i;j++){
+        //         System.out.print(" ");  // blanks
+        //     }
+        //     for(int j=1;j<=i;j++){
+        //         System.out.print("8");
+        //     }
+        //     System.out.println();
+        // }
 
+        // 6) number printing pattern 
+        // for(int i =1;i<=5;i++){
+        //     for(int j =1;j<=i;j++){
+        //         System.out.print(j);
+        //     }
+        //     System.out.println();
+        // }
+        // 7) inverted half number pyramid
+        // for (int i =5;i>=1;i--){
+        //     for(int j=1;j<=i;j++ ){
+        //         System.out.print(j);
+        //     }
+        //     System.out.println();
+        // }
+
+        // 8) print the pattern:
+        // int n =1;
+        // for(int i=1;i<=5;i++){
+        //     for(int j = 1; j<=i;j++){
+        //         System.out.print(n+" ");
+        //         n++;
+        //     }
+        //     System.out.println();
+        // }
+        // 9) print the pattern :
+        for(int i =1; i<=5;i++){
+            for(int j=1;j<=i;j++){
+                int sum = i+j;
+                if(sum % 2==0){
+                    System.out.print("1");
+                }else{
+                    System.out.print("0");
+                }
+            }
+            System.out.println("");
+
+        }
 
     }
 }
