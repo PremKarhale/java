@@ -80,18 +80,75 @@ class pattern{
         //     System.out.println();
         // }
         // 9) print the pattern :
-        for(int i =1; i<=5;i++){
-            for(int j=1;j<=i;j++){
-                int sum = i+j;
-                if(sum % 2==0){
-                    System.out.print("1");
-                }else{
-                    System.out.print("0");
-                }
-            }
-            System.out.println("");
+        // for(int i =1; i<=5;i++){
+        //     for(int j=1;j<=i;j++){
+        //         int sum = i+j;
+        //         if(sum % 2==0){
+        //             System.out.print("1");
+        //         }else{
+        //             System.out.print("0");
+        //         }
+        //     }
+        //     System.out.println("");
 
+        // }
+
+        // Advanced Pattern 
+        // Butterfly pattern 
+
+        // *        *
+        // **      **
+        // ***    ***
+        // ****  ****
+        // **********
+        // **********
+        // ****  ****
+        // ***    ***
+        // **      **
+        // *        *
+
+        int n = 5;
+        // first half -- upper half
+        for(int i =1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+
+            //spaces
+            int spaces =2*(n-i);
+            for(int j=1;j<=spaces;j++){
+                System.out.print(" ");
+            }
+
+            // 2nd part of stars
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+
+            System.out.println();
         }
+
+        // 2nd half
+        for(int i =n;i>=1;i--){
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+
+            //spaces
+            int spaces =2*(n-i);
+            for(int j=1;j<=spaces;j++){
+                System.out.print(" ");
+            }
+
+            // 2nd part of stars
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+
+
 
     }
 }
