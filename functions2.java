@@ -66,8 +66,16 @@ public class functions2 {
 0 1 1 2 3 5 8 13 21 ..... 
 In the Fibonacci series, a number is the sum of the previous 2 numbers that 
 */
-    public static void fibonacci(int a){
-        
+    public static void fibonacci(int n){
+        int a=0;
+        int b=1;
+        for(int i =1;i<=n;i++){
+            int next = a+b;
+            System.out.print(next);
+            a=b;
+            b=next;
+        }
+
     }
 
 
@@ -85,9 +93,7 @@ In the Fibonacci series, a number is the sum of the previous 2 numbers that
         // System.out.println("Positive Number :" + positive);
         // System.out.println("Negative Number :" + negative);
         // System.out.println("Zeros Number :" + zeros);
-
-        int a = sc.nextInt();
         int n = sc.nextInt();
-        System.out.println(power(a,n));
+        fibonacci(n);
     }
 }
