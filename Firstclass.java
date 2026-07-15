@@ -21,7 +21,6 @@ class Firstclass{
         System.out.println(sum);
 
     
-
     }
 }
 
