@@ -11,6 +11,7 @@ public class twoDArray {
         // input 
         for(int i=0;i<rows;i++){
             for(int j=0;j<col;j++){
+                System.out.println("Enter the numbers:");
                 numbers[i][j]=sc.nextInt();
             }
         }
