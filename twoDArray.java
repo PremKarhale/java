@@ -54,11 +54,23 @@ public class twoDArray {
         // Find Second Largest Element
         int nums[]={8,8,7,6,5};
         Arrays.sort(nums);
+        //output
         for(int i=0;i<nums.length;i++){
             System.out.print(nums[i]+" ");
         }
         System.out.println();
-        System.out.println(nums[nums.length-2]);
+        int max =nums[0];
+        for(int i=1;i<nums.length;i++){
+            if(nums[i]>nums[0]){
+                max = nums[i];
+            }
+        }
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]==max){
+                
+            }
+        }
+        
 
 
     }
