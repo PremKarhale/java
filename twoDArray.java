@@ -1,14 +1,13 @@
 // Taking input for 2D Array !!
-// import java.util.*;
-import java.util.Arrays;
+import java.util.*;
 public class twoDArray {
     public static void main(String[]  args){
-        // Scanner sc = new Scanner(System.in);
-        // System.out.println("Enter the rows and columns");
-        // int rows = sc.nextInt();
-        // int col = sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the rows and columns");
+        int rows = sc.nextInt();
+        int col = sc.nextInt();
 
-        // int [][] numbers = new int[rows][col]; // initialising the 2D Array.
+        int [][] numbers = new int[rows][col]; // initialising the 2D Array.
 
         // // input 
         // for(int i=0;i<rows;i++){
@@ -26,51 +25,31 @@ public class twoDArray {
         // }
 
 
-//Take a matrix as input from the user. Search for a given number X and print the indices at which it occurs 
-        // for(int i=0;i<rows;i++){
-        //     for(int j=0;j<col;j++){              // input
-        //         numbers[i][j] = sc.nextInt();
-        //     }
-        // }
-
-        // for(int i=0;i<rows;i++){
-        //     for(int j=0;j<col;j++){              // input
-        //         System.out.print(numbers[i][j] + " ");
-        //     }
-        //     System.out.println();
-        // }
-        // System.out.print("Enter some number :");
-        // int X = sc.nextInt();
-        // for(int i=0;i<rows;i++){
-        //     for(int j=0;j<col;j++){
-        //         if(numbers[i][j]==X){
-        //             System.out.println("Idex of the given number is : "+i+","+j);
-        //             return;
-        //         }
-        //     }
-        // }
-        //  System.out.println("Given no is not present in the matrix !");
-
-        // Find Second Largest Element
-        int nums[]={8,8,7,6,5};
-        Arrays.sort(nums);
-        //output
-        for(int i=0;i<nums.length;i++){
-            System.out.print(nums[i]+" ");
-        }
-        System.out.println();
-        int max =nums[0];
-        for(int i=1;i<nums.length;i++){
-            if(nums[i]>nums[0]){
-                max = nums[i];
+// Take a matrix as input from the user. Search for a given number X and print the indices at which it occurs 
+        for(int i=0;i<rows;i++){
+            for(int j=0;j<col;j++){              // input
+                numbers[i][j] = sc.nextInt();
             }
         }
-        for(int i=0;i<nums.length;i++){
-            if(nums[i]==max){
-                
+
+        for(int i=0;i<rows;i++){
+            for(int j=0;j<col;j++){              // input
+                System.out.print(numbers[i][j] + " ");
+            }
+            System.out.println();
+        }
+        System.out.print("Enter some number :");
+        int X = sc.nextInt();
+        for(int i=0;i<rows;i++){
+            for(int j=0;j<col;j++){
+                if(numbers[i][j]==X){
+                    System.out.println("Idex of the given number is : "+i+","+j);
+                    return;
+                }
             }
         }
-        
+         System.out.println("Given no is not present in the matrix !");
+
 
 
     }
