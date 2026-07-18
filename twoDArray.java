@@ -1,7 +1,8 @@
 // Taking input for 2D Array !!
-import java.util.*;
+// import java.util.*;
+import java.util.Arrays;
 public class twoDArray {
-    public static int main(String args[]){
+    public static void main(String[]  args){
         // Scanner sc = new Scanner(System.in);
         // System.out.println("Enter the rows and columns");
         // int rows = sc.nextInt();
@@ -53,7 +54,11 @@ public class twoDArray {
         // Find Second Largest Element
         int nums[]={8,8,7,6,5};
         Arrays.sort(nums);
-        return nums[nums.length-2];
+        for(int i=0;i<nums.length;i++){
+            System.out.print(nums[i]+" ");
+        }
+        System.out.println();
+        System.out.println(nums[nums.length-2]);
 
 
     }
