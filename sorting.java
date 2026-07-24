@@ -35,7 +35,7 @@ public class sorting {
         // printArray(arr);
 
         // finding the second largest element in an array 
-        int arr[]={1,2,4,7,7,5};
+        // int arr[]={1,2,4,7,7,5};
         // int largest =arr[0];
         // for(int i=1;i<arr.length;i++){
         //     if(arr[i]>largest){
@@ -52,7 +52,8 @@ public class sorting {
         // }
         // System.out.println(secondl);
 
-        // optimal solution 
+        // optimal solution --> To find the second largest 0(n)
+        int arr[]={3,4,7,9,1,1};
         int largest =arr[0];
         int slargest = -1;
         for(int i=1;i<arr.length;i++){
