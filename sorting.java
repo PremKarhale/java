@@ -20,18 +20,36 @@ public class sorting {
         // printArray(arr);
 
         // selection sort
-        int arr[] ={7,8,3,1,2};
-        for(int i=0;i<arr.length-1;i++){
-            int smallest = i;
-            for(int j=i+1;j<arr.length;j++){
-                if(arr[smallest]>arr[j]){
-                    smallest=j;
-                }
-            }   
-            int temp = arr[smallest];
-            arr[smallest]=arr[i];
-            arr[i]=temp;
+        // int arr[] ={7,8,3,1,2};
+        // for(int i=0;i<arr.length-1;i++){
+        //     int smallest = i;
+        //     for(int j=i+1;j<arr.length;j++){
+        //         if(arr[smallest]>arr[j]){
+        //             smallest=j;
+        //         }
+        //     }   
+        //     int temp = arr[smallest];
+        //     arr[smallest]=arr[i];
+        //     arr[i]=temp;
+        // }
+        // printArray(arr);
+
+        // finding the second largest element in an array 
+        int arr[]={1,2,4,7,7,5};
+        int largest =arr[0];
+        for(int i=1;i<arr.length;i++){
+            if(arr[i]>largest){
+                largest = arr[i];
+            }
         }
-        printArray(arr);
+        System.out.println(largest);  // i got the largest element !
+        // now finding the second largest element ;
+        int secondl=-1;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]>secondl && arr[i]!=largest){
+                secondl = arr[i];
+            }
+        }
+        System.out.println(secondl);
     }
 }
