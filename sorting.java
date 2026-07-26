@@ -1,11 +1,13 @@
+
 public class sorting {
 
-    public static void printArray(int arr[]){
-        for(int i=0;i<arr.length;i++){
-            System.out.print(arr[i]+" ");
+    public static void printArray(int arr[]) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
         }
     }
-    public static void main(String[] args) {
+
+    public static int main(String[] args) {
         // // Bubble sort 
         // int arr[]={7,8,3,1,2};
         // for(int i=0;i<arr.length-1;i++){
@@ -33,7 +35,6 @@ public class sorting {
         //     arr[i]=temp;
         // }
         // printArray(arr);
-
         // finding the second largest element in an array 
         // int arr[]={1,2,4,7,7,5};
         // int largest =arr[0];
@@ -51,20 +52,33 @@ public class sorting {
         //     }
         // }
         // System.out.println(secondl);
-
         // optimal solution --> To find the second largest 0(n)
-        int arr[]={3,4,7,9,1,1};
-        int largest =arr[0];
-        int slargest = -1;
-        for(int i=1;i<arr.length;i++){
-            if(arr[i]>largest){
-                slargest = largest;
-                largest = arr[i];
-            }else if(arr[i]<largest && arr[i]>slargest){
-                slargest = arr[i];
+        // int arr[]={3,4,7,9,1,1};
+        // int largest =arr[0];
+        // int slargest = -1;
+        // for(int i=1;i<arr.length;i++){
+        //     if(arr[i]>largest){
+        //         slargest = largest;
+        //         largest = arr[i];
+        //     }else if(arr[i]<largest && arr[i]>slargest){
+        //         slargest = arr[i];
+        //     }
+        // }
+        // System.out.println(largest);
+        // System.out.println(slargest);
+        int nums[] = {-100, -98, -1, 2, 3, 4};
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = 0; j < nums.length - i - 1; j++) {
+                if (nums[j] > nums[j + 1]) {
+                    int temp = nums[j + 1];
+                    nums[j + 1] = nums[j];
+                    nums[j] = temp;
+                }
             }
         }
-        System.out.println(largest);
-        System.out.println(slargest);
+        int num = nums.length - 1;
+        int result = nums[num] * nums[num - 1] * nums[num - 2];
+        return result;
     }
 }
+
