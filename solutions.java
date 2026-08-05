@@ -1,3 +1,5 @@
+import java.util.HashSet;
+
 public class solutions {
 
     // remove duplicates from an sorted array 
@@ -23,12 +25,18 @@ public class solutions {
     //     }
     //     return i+1;
     // }
+    public int UnionofSortedArray(int nums1[],int nums2[]){
+        HashSet<Integer> seen = new HashSet<>();
+        
+        return -1;
+    }
 
     public static void main(String[] args){
-        int nums[]={1,1,2,3,3,};
+        int nums1[]={1,1,2,3,3,};
+        int nums2[]={2,2,4,5,5,6};
         solutions sol = new solutions(); 
-        int  k =sol.removeDuplicates(nums);
-        System.out.println(k);
+        // int  k =sol.removeDuplicates(nums);
+        // System.out.println(k);
         
     }
 }
