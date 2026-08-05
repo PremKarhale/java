@@ -25,18 +25,29 @@ public class solutions {
     //     }
     //     return i+1;
     // }
-    public int UnionofSortedArray(int nums1[],int nums2[]){
+    public HashSet<Integer> UnionofSortedArray(int nums1[],int nums2[]){
         HashSet<Integer> seen = new HashSet<>();
-        
-        return -1;
+        for(int i=0;i<nums1.length;i++){
+            if(!seen.contains(nums1[i])){
+                seen.add(nums1[i]);
+            }
+        }
+        for(int i=0;i<nums2.length;i++){
+            if(!seen.contains(nums2[i])){
+                seen.add(nums2[i]);
+            }
+        }
+
+        return seen;
     }
 
     public static void main(String[] args){
         int nums1[]={1,1,2,3,3,};
         int nums2[]={2,2,4,5,5,6};
         solutions sol = new solutions(); 
+        System.out.println(sol.UnionofSortedArray(nums1, nums2));
+     
         // int  k =sol.removeDuplicates(nums);
-        // System.out.println(k);
         
     }
 }
