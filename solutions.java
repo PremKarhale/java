@@ -51,7 +51,6 @@ public class solutions {
         
     }
 }
-
 // rotating k elements to the right 
 // class Solution {
 //     public void rotate(int[] nums, int k) {
