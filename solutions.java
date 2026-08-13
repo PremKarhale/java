@@ -34,7 +34,7 @@ public class solutions {
         }
         for(int i=0;i<nums2.length;i++){
             if(!seen.contains(nums2[i])){
-                seen.add(nums2[i]);
+                seen.add(nums2[i]); 
             }
         }
 
