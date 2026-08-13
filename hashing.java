@@ -19,5 +19,17 @@ public class hashing {
         //.get
         System.out.println(map.get("India"));
         System.out.println(map.get("Indonesia"));//null
+
+        // for loop 
+        int arr[]={1,2,3,4,5,6};
+        for(int val:arr){
+            System.out.println(val);
+        }
+        //for loop on hashmap 
+        for(Map.Entry<String ,Integer> e :map.entrySet()){  
+            System.out.println(e.getKey() + " "+ e.getValue());  // to get the values from the hashset 
+            // System.out.println(e.getValue()); 
+        }
+
     }
 }
