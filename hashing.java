@@ -30,6 +30,8 @@ public class hashing {
             System.out.println(e.getKey() + " "+ e.getValue());  // to get the values from the hashset 
             // System.out.println(e.getValue()); 
         }
-
+        // to remove 
+        map.remove("china");
+        System.out.println(map);
     }
 }
