@@ -15,5 +15,9 @@ public class hashing {
         }else{
             System.out.println("No it does not exist");
         }
+
+        //.get
+        System.out.println(map.get("India"));
+        System.out.println(map.get("Indonesia"));//null
     }
 }
