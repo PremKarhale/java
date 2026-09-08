@@ -42,8 +42,8 @@ public class solutions {
     }
 
     public static void main(String[] args){
-        int nums1[]={1,1,2,3,3,};
-        int nums2[]={2,2,4,5,5,6};
+        int nums1[]={1,4,5,10};
+        int nums2[]={7,8,9,10};
         solutions sol = new solutions(); 
         System.out.println(sol.UnionofSortedArray(nums1, nums2));
      
