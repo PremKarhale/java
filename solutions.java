@@ -1,4 +1,4 @@
-import java.util.HashSet;
+import java.util.Arrays;
 
 public class solutions {
 
@@ -25,29 +25,56 @@ public class solutions {
     //     }
     //     return i+1;
     // }
-    public HashSet<Integer> UnionofSortedArray(int nums1[],int nums2[]){
-        HashSet<Integer> seen = new HashSet<>();
-        for(int i=0;i<nums1.length;i++){
-            if(!seen.contains(nums1[i])){
-                seen.add(nums1[i]);
-            }
-        }
-        for(int i=0;i<nums2.length;i++){
-            if(!seen.contains(nums2[i])){
-                seen.add(nums2[i]); 
-            }
-        }
 
-        return seen;
+    // UNION OF SORTED ARRAYS
+    // public HashSet<Integer> UnionofSortedArray(int nums1[],int nums2[]){
+    //     HashSet<Integer> seen = new HashSet<>();
+    //     for(int i=0;i<nums1.length;i++){
+    //         if(!seen.contains(nums1[i])){
+    //             seen.add(nums1[i]);
+    //         }
+    //     }
+    //     for(int i=0;i<nums2.length;i++){
+    //         if(!seen.contains(nums2[i])){
+    //             seen.add(nums2[i]); 
+    //         }
+    //     }
+
+    //     return seen;
+    // }
+
+    //public int search(int[] nums, int target) {
+    public int search(int[] nums,int target){
+    
+        int low =0;
+        int high =nums.length-1;
+        while(low<high){
+            int mid = (low+high)/2;
+            if(nums[mid] == target){
+                return mid;
+            }else if(nums[mid]<target){
+                low = mid + 1;
+            }else{
+                high = mid-1;
+            }
+        }
+        return -1;
     }
+        
+    
 
-    public static void main(String[] args){
-        int nums1[]={1,4,5,10};
-        int nums2[]={7,8,9,10};
-        solutions sol = new solutions(); 
-        System.out.println(sol.UnionofSortedArray(nums1, nums2));
+    public static void  main(String[] args){
+        // int nums1[]={1,4,5,10};
+        // int nums2[]={7,8,9,10};
+        // solutions sol = new solutions(); 
+        // System.out.println(sol.UnionofSortedArray(nums1, nums2));
      
         // int  k =sol.removeDuplicates(nums);
+
+        int nums[]={4,5,6,7,0,1,2};
+        int target = 0;
+        solutions sol = new solutions();
+        System.out.println(sol.search(nums, target));
         
     }
 }
