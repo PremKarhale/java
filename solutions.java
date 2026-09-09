@@ -1,4 +1,3 @@
-import java.util.Arrays;
 
 public class solutions {
 
@@ -45,7 +44,7 @@ public class solutions {
 
     //public int search(int[] nums, int target) {
     public int search(int[] nums,int target){
-    
+     
         int low =0;
         int high =nums.length-1;
         while(low<high){
