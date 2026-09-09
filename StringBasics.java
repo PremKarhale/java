@@ -17,8 +17,21 @@ public class StringBasics {
     // }
     
     // Q ) find the following the sting is palendrome or not 
-        String s = "markram";
-        
+        String s = "markrm";
+        // int left = s.charAt(0);
+        // int right = s.length()-1;
+        // while(left<right){
+
+        // }
+        int i =0;
+        for(int j=s.length()-1;j<i;j--){
+            if(s.charAt(i)==s.charAt(j)){
+                i++;
+            }else{
+                System.out.println("not a palindrone ");
+            }
+        }
 
 
+}
 }
