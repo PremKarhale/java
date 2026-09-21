@@ -17,20 +17,40 @@ public class StringBasics {
     // }
     
     // Q ) find the following the sting is palendrome or not 
-        String s = "markrm";
-        // int left = s.charAt(0);
-        // int right = s.length()-1;
-        // while(left<right){
-
+        String s = "markram";
+        // int i =s.length()-1;
+        // for(int j=0;j<i;j++){
+        //     if(s.charAt(i)==s.charAt(j)){
+        //         i--;
+        //     }else{
+        //         System.out.println("not a palindrone ");
+        //         break;
+        //     }
         // }
-        int i =0;
-        for(int j=s.length()-1;j<i;j--){
-            if(s.charAt(i)==s.charAt(j)){
-                i++;
-            }else{
-                System.out.println("not a palindrone ");
-            }
-        }
+        // int i =0;
+        // int j = s.length()-1;
+        // while(i<j){
+        //     if(s.charAt(i)!= s.charAt(j)){
+        //         System.out.println("String is not a palindrome");
+        //         break;
+        //     }
+        //     i++;
+        //     j--;
+        // }
+        // System.out.println("String is palindrome");
+
+        // putting string into char array 
+        s = "Prem";
+        // System.out.println(s);  hense strings are mutable
+
+        // puting char strings into an array 
+        // char arr[]= s.toCharArray();
+        // for(char ch:arr){
+        //     System.out.println(ch);
+        // }
+
+    
+        
 
 
 }
