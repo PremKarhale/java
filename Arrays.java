@@ -40,6 +40,7 @@ public class Arrays {
 // Take the input array from the user and search for a given no x. and print the index at which the no occurs.
         int size = sc.nextInt();
         int find[] = new int[size];
+        // input array
         for(int i =0;i<size;i++){
             find[i]=sc.nextInt();
         }
