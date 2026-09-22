@@ -57,15 +57,30 @@ public class StringBasics {
     // }
 
     // Q) find the sum of all possible substrings of this string 
-    String s ="234";
-    int sum =0;
-    for(int i=0;i<s.length();i++){
-        for(int j=i+1;j<=s.length();j++){
-            int num = Integer.parseInt(s.substring(i,j));
-            sum = sum + num;
-        }
-    }
-    System.out.println(sum);//300
+    // String s ="234";
+    // int sum =0;
+    // for(int i=0;i<s.length();i++){
+    //     for(int j=i+1;j<=s.length();j++){
+    //         int num = Integer.parseInt(s.substring(i,j));
+    //         sum = sum + num;
+    //     }
+    // }
+    // System.out.println(sum);//300
+
+    // Strings are inmutable 
+    // String s1= "raghav";
+    // String s2 = "raghav";
+    // System.out.println(s1==s2);// true    because both s1 and s2 are pointing to the same String "raghav " in the memory  [ S1 ----> "raghav" <---- S2]
+
+    // now 
+    String s1 = new String("raghav"); // this created a totally new string 
+    String s2 = new String("raghav");
+
+    System.out.println(s1==s2);//false  // because now it compares address location of the strings in the memory 
+    System.out.println(s1.equals(s2)); //true
+
+
+
 
     
 }
