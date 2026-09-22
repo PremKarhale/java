@@ -72,12 +72,17 @@ public class StringBasics {
     // String s2 = "raghav";
     // System.out.println(s1==s2);// true    because both s1 and s2 are pointing to the same String "raghav " in the memory  [ S1 ----> "raghav" <---- S2]
 
-    // now 
-    String s1 = new String("raghav"); // this created a totally new string 
-    String s2 = new String("raghav");
+    // // now 
+    // String s1 = new String("raghav"); // this created a totally new string 
+    // String s2 = new String("raghav");
 
-    System.out.println(s1==s2);//false  // because now it compares address location of the strings in the memory 
-    System.out.println(s1.equals(s2)); //true
+    // System.out.println(s1==s2);//false  // because now it compares address location of the strings in the memory 
+    // System.out.println(s1.equals(s2)); //true
+    StringBuilder s = new StringBuilder( "prem");  // string builder does not create a new memory location every time while appending. it appends new string in the existing string.
+    System.out.println(s.length()+" "+s.capacity());
+    s.append("karhale");
+    System.out.println(s);
+    System.out.println(s.length()+" "+s.capacity());
 
 
 
