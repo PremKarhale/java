@@ -2,7 +2,7 @@ public class StringBasics {
     public static void main(String[] args){
         // String s = "hello";
         // System.out.println(s);
-        // System.out.println(s.charAt(1));
+        // System.out.println(s.charAt(1)); e
         
         // Q) Count the no of vowels in word "Karhale"
     //     String k = "Karhale";
@@ -17,7 +17,7 @@ public class StringBasics {
     // }
     
     // Q ) find the following the sting is palendrome or not 
-        String s = "markram";
+        // String s = "markram";
         // int i =s.length()-1;
         // for(int j=0;j<i;j++){
         //     if(s.charAt(i)==s.charAt(j)){
@@ -40,9 +40,8 @@ public class StringBasics {
         // System.out.println("String is palindrome");
 
         // putting string into char array 
-        s = "Gopi";
-        // System.out.println(s);  hense strings are mutable
-
+        
+        // s = "Gopi";
         // puting char strings into an array 
         // char arr[]= s.toCharArray();
         // for(char ch:arr){
@@ -51,11 +50,23 @@ public class StringBasics {
 
     // Q Print all substrings of Prem
     // System.out.println(s.substring(0));
-    for(int j=0;j<s.length();j++){
-        for(int i=j;i<=s.length();i++){
-        System.out.println(s.substring(j,i));
+    // for(int j=0;j<s.length();j++){
+    //     for(int i=j;i<=s.length();i++){
+    //     System.out.println(s.substring(j,i));
+    // }
+    // }
+
+    // Q) find the sum of all possible substrings of this string 
+    String s ="234";
+    int sum =0;
+    for(int i=0;i<s.length();i++){
+        for(int j=i+1;j<=s.length();j++){
+            int num = Integer.parseInt(s.substring(i,j));
+            sum = sum + num;
+        }
     }
-    }
+    System.out.println(sum);//300
+
     
 }
 }
