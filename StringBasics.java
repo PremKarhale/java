@@ -40,7 +40,7 @@ public class StringBasics {
         // System.out.println("String is palindrome");
 
         // putting string into char array 
-        s = "Prem";
+        s = "Gopi";
         // System.out.println(s);  hense strings are mutable
 
         // puting char strings into an array 
@@ -49,9 +49,13 @@ public class StringBasics {
         //     System.out.println(ch);
         // }
 
+    // Q Print all substrings of Prem
+    // System.out.println(s.substring(0));
+    for(int j=0;j<s.length();j++){
+        for(int i=j;i<=s.length();i++){
+        System.out.println(s.substring(j,i));
+    }
+    }
     
-        
-
-
 }
 }
