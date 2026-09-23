@@ -119,27 +119,33 @@ public class StringBasics {
 
     // brute force : Function to find the maximum occuring character in the string , if freq is equal return the character which is laxografically smaller 
 
-    String s = "PremKarhale";
+    // String s = "PremKarhale";
+    // s = s.toLowerCase();
+    // int n = s.length();
+    // int maxfreq = -1;
+    // char ans = s.charAt(0);
+
+    // for(int i=0;i<n;i++){
+    //     int freq =1;
+    //     char ch = s.charAt(i);
+    //     for(int j=i+1;j<n;j++){
+    //         if(s.charAt(i)==s.charAt(j)) freq++;
+    //     }
+    //     if(freq > maxfreq){
+    //         maxfreq = freq;
+    //         ans = ch;
+    //     }else if(freq == maxfreq && ch <ans){
+    //         ans = ch;
+    //     }
+    // }
+
+    // System.out.println(ans);
+
+    // better solution using sliding window 
+    String s = "PremKarahle";
     s = s.toLowerCase();
-    int n = s.length();
-    int maxfreq = -1;
-    char ans = s.charAt(0);
-
-    for(int i=0;i<n;i++){
-        int freq =1;
-        char ch = s.charAt(i);
-        for(int j=i+1;j<n;j++){
-            if(s.charAt(i)==s.charAt(j)) freq++;
-        }
-        if(freq > maxfreq){
-            maxfreq = freq;
-            ans = ch;
-        }else if(freq == maxfreq && ch <ans){
-            ans = ch;
-        }
-    }
-
-    System.out.println(ans);
+    char arr[]= s.toCharArray();
+    
 
 
 
