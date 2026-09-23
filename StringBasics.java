@@ -4,7 +4,7 @@ public class StringBasics {
         // System.out.println(s);
         // System.out.println(s.charAt(1)); e
         
-        // Q) Count the no of vowels in word "Karhale"
+    // Q) Count the no of vowels in word "Karhale"
     //     String k = "Karhale";
     //     int count =0;
     //     for(int i=0;i<k.length();i++){
@@ -78,11 +78,45 @@ public class StringBasics {
 
     // System.out.println(s1==s2);//false  // because now it compares address location of the strings in the memory 
     // System.out.println(s1.equals(s2)); //true
-    StringBuilder s = new StringBuilder( "prem");  // string builder does not create a new memory location every time while appending. it appends new string in the existing string.
-    System.out.println(s.length()+" "+s.capacity());
-    s.append("karhale");
+
+    // StringBuilder s = new StringBuilder( "prem");  // string builder does not create a new memory location every time while appending. it appends new string in the existing string.
+
+    // System.out.println(s.length()+" "+s.capacity());
+    
+    // s.append(" "+"karhale");//prem karhale
+    // System.out.println(s);
+    // System.out.println(s.length()+" "+s.capacity()); //12 20
+
+    // String s = "prem";
+    // s = s + "karhale"; // now it became a new string s pointing to a "premkarhale"
+
+    // sb.append("jain");
+    
+    // Manually perform operation of reversing the string 
+    // StringBuilder sb = new StringBuilder("PremKarhale");
+    // System.out.println(sb.reverse()); 
+    // int i =0 ;
+    // int j = sb.length()-1;
+    // while(i<=j){
+    //     char temp = sb.charAt(i);
+    //     sb.setCharAt(i,sb.charAt(j));
+    //     sb.setCharAt(j, temp);
+
+    //     i++;
+    //     j--;
+    // }
+    // System.out.println(sb);
+
+    // if you want to reverse the String s , then it is very difficult and not efficient , one such way of doing it is to convert it into StringBuilder and then doing it 
+    String s = "prem";
+    StringBuilder sb = new StringBuilder(s);
+    sb.reverse();
+    s = sb.toString(); // sb is converted back to String 
     System.out.println(s);
-    System.out.println(s.length()+" "+s.capacity());
+
+
+
+
 
 
 
