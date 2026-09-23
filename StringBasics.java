@@ -107,13 +107,39 @@ public class StringBasics {
     // }
     // System.out.println(sb);
 
-    // if you want to reverse the String s , then it is very difficult and not efficient , one such way of doing it is to convert it into StringBuilder and then doing it 
-    String s = "prem";
-    StringBuilder sb = new StringBuilder(s);
-    sb.reverse();
-    s = sb.toString(); // sb is converted back to String 
-    System.out.println(s);
 
+
+
+    //***/ if you want to reverse the String s , then it is very difficult and not efficient , one such way of doing it is to convert it into StringBuilder and then doing it 
+    // String s = "prem";
+    // StringBuilder sb = new StringBuilder(s);
+    // sb.reverse();
+    // s = sb.toString(); // sb is converted back to String 
+    // System.out.println(s);
+
+    // brute force : Function to find the maximum occuring character in the string , if freq is equal return the character which is laxografically smaller 
+
+    String s = "PremKarhale";
+    s = s.toLowerCase();
+    int n = s.length();
+    int maxfreq = -1;
+    char ans = s.charAt(0);
+
+    for(int i=0;i<n;i++){
+        int freq =1;
+        char ch = s.charAt(i);
+        for(int j=i+1;j<n;j++){
+            if(s.charAt(i)==s.charAt(j)) freq++;
+        }
+        if(freq > maxfreq){
+            maxfreq = freq;
+            ans = ch;
+        }else if(freq == maxfreq && ch <ans){
+            ans = ch;
+        }
+    }
+
+    System.out.println(ans);
 
 
 
