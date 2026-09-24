@@ -124,35 +124,55 @@ public class FullStrings1 {
 
     
         // better solution using  "sliding window" 
-        String s = "PremKarrrahle";
-        s = s.toLowerCase();
-        int n = s.length();
-        int maxfreq = -1;
-        char ans = s.charAt(0);
+    //     String s = "PremKarrrahle";
+    //     s = s.toLowerCase();
+    //     int n = s.length();
+    //     int maxfreq = -1;
+    //     char ans = s.charAt(0);
 
-        char arr[] = s.toCharArray(); // string convert to char arr []
-        Arrays.sort(arr);
-        // String s1 = new String(arr); // sorted string 
+    //     char arr[] = s.toCharArray(); // string convert to char arr []
+    //     Arrays.sort(arr);
+    //     // String s1 = new String(arr); // sorted string 
 
-        int i = 0, j = 0;
-        while (j < n) {
-            if (arr[i] == arr[j]) {
-                j++;
-            } else {
-                int freq = j - i;
-                if (freq > maxfreq) {
-                    maxfreq = freq;
-                    ans = arr[i];
-                }
-                i = j;
-            }
-        }
-        int freq = j - i;
-        if (freq > maxfreq) {
-            maxfreq = freq;
-            ans = arr[i];
-        }
-        System.out.println(ans);
+    //     int i = 0, j = 0;
+    //     while (j < n) {
+    //         if (arr[i] == arr[j]) {
+    //             j++;
+    //         } else {
+    //             int freq = j - i;
+    //             if (freq > maxfreq) {
+    //                 maxfreq = freq;
+    //                 ans = arr[i];
+    //             }
+    //             i = j;
+    //         }
+    //     }
+    //     int freq = j - i;
+    //     if (freq > maxfreq) {
+    //         maxfreq = freq;
+    //         ans = arr[i];
+    //     }
+    //     System.out.println(ans);
 
+    // }
+
+    // finding the most occuring char using Frequency Array 
+    String s = "PreemmKaarhaale";
+    int n = s.length();
+    int maxfreq = 0;
+    char ans = s.charAt(0);
+    int[] freq = new int[26]; // created a frq array initialise all the values to the zero by default 
+    for(int i=0;i<n;i++){
+        char ch=s.charAt(i);
+        int idx = ch - 97;
+        freq[idx]++;
     }
+    for(int i=0;i<freq.length;i++){
+        if(freq[i]>maxfreq){
+            maxfreq = freq[i];
+            ans = i+97;
+        }
+    }
+    
+}
 }
