@@ -1,5 +1,4 @@
 
-import java.util.Arrays;
 
 public class FullStrings1 {
 
@@ -157,22 +156,52 @@ public class FullStrings1 {
     // }
 
     // finding the most occuring char using Frequency Array 
-    String s = "PreemmKaarhaale";
-    int n = s.length();
-    int maxfreq = 0;
-    char ans = s.charAt(0);
-    int[] freq = new int[26]; // created a frq array initialise all the values to the zero by default 
-    for(int i=0;i<n;i++){
-        char ch=s.charAt(i);
+//     String s ="PremmmKaaarhale";
+//     s=s.toLowerCase();
+//     int n = s.length();
+//     int maxfreq = 0;
+//     char ans = s.charAt(0);
+//     int[] freq = new int[52]; // created a frq array initialise all the values to the zero by default 
+//     for(int i=0;i<n;i++){
+//         char ch=s.charAt(i);
+//         int idx = ch - 97;
+//         freq[idx]++;
+//     }
+//     for(int i=0;i<freq.length;i++){
+//         if(freq[i]>maxfreq){
+//             maxfreq = freq[i];
+//             ans = (char)(i+97);
+//         }
+//     }
+//     System.out.println(maxfreq);
+//     System.out.println(ans);
+
+
+// finding the non repeating character 
+    String s = "KARHALE";
+    s = s.toLowerCase();
+
+    // remember !! common way to find the freq of the char in an array 
+    int freq[] = new int[26];
+    for(int i=0;i<s.length();i++){
+        char ch = s.charAt(i);
         int idx = ch - 97;
         freq[idx]++;
     }
+    char ans = s.charAt(0);
     for(int i=0;i<freq.length;i++){
-        if(freq[i]>maxfreq){
-            maxfreq = freq[i];
-            ans = i+97;
+        if(freq[i]==1) {
+            char temp = (char)(i + 97);
+            if(temp < ans){
+                ans = temp;
+            }
         }
-    }
     
+    }
+    System.out.println(ans);
+
 }
 }
+
+
+
