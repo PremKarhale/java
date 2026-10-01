@@ -42,6 +42,7 @@ public class solutions {
     //     return seen;
     // }
 
+    // binary search problem !!
     //public int search(int[] nums, int target) {
     public int search(int[] nums,int target){
      
