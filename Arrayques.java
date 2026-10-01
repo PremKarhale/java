@@ -1,4 +1,6 @@
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Scanner;
 
 public class Arrayques {
@@ -43,6 +45,33 @@ Eg : { 1, 2, 4, 7 } is sorted in ascending order.
         }
        }
         System.out.println(" Yes this is an ascending sorted array ");
+        
+        // UNION OF SORTED ARRAY;
+        // ArrayList<Integer> list = new ArrayList<>();
+
+        // HashSet<Integer> seen = new HashSet<>();
+
+        // // for each loop 
+        // for(int num:nums1){
+        //     if(!seen.contains(num)){
+        //         seen.add(num);
+        //     }
+        // }
+        // for(int num:nums2){
+        //     if(!seen.contains(num)){
+        //         seen.add(num);
+        //     }
+        // }
+
+        // for(int x : seen){
+        //     list.add(x);
+        // }
+        // int ans[] = new int[list.size()]; // creating dynamic ans  Array
+        // for(int i=0;i<list.size();i++){
+        //     ans[i] = list.get(i);
+        // }
+
+        // return ans;
 
 
     }
