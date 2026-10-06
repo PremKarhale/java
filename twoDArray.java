@@ -67,7 +67,7 @@ public class twoDArray {
             }
             if (sum > max) {
                 max = sum;
-                ans = i+1;
+                ans = i;
             }
         }
         System.out.println("max sum = " + max + " with row no : " + ans);
