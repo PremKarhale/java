@@ -9,7 +9,7 @@ public class twoDArray {
         // int col = sc.nextInt();
 
         // int [][] nums = new int[rows][col]; // initialising the 2D Array.
-        int[][] nums = {{1, 2,}, {3, 4,}}; // 2 X 2
+        int[][] nums = {{1, 2,4}, {3, 4,0},{1,2,9}}; // 3 X 3
 
         // // input 
         // for(int i=0;i<nums.length;i++){
@@ -57,20 +57,39 @@ public class twoDArray {
         //     }
         // }
         // System.out.println(sum);
+
         //Q find the row with max sum ;
-        int max = 0;
-        int ans = -1;
-        for (int i = 0; i < nums.length; i++) {
-            int sum = 0;
-            for (int j = 0; j < nums[0].length; j++) {
-                sum = sum + nums[i][j];
-            }
-            if (sum > max) {
-                max = sum;
-                ans = i;
-            }
-        }
-        System.out.println("max sum = " + max + " with row no : " + ans);
+        // int max = 0;
+        // int ans = -1;
+        // for (int i = 0; i < nums.length; i++) {
+        //     int sum = 0;
+        //     for (int j = 0; j < nums[0].length; j++) {
+        //         sum = sum + nums[i][j];
+        //     }
+        //     if (sum > max) {
+        //         max = sum;
+        //         ans = i;
+        //     }
+        // }
+        // System.out.println("max sum = " + max + " with row no : " + ans);
+
+        // Q Find the mini element out of all the elements of each rows 
+            // int mini =Integer.MAX_VALUE;
+            // for(int i=0;i<nums.length;i++){
+            //     for(int j=0;j<nums[0].length;j++){
+            //         for(int k=j+1;k<nums[0].length;k++){
+            //             if(nums[i][k] < nums[i][j]){
+            //                 mini = Math.min(mini,nums[i][k]);
+            //             }else{
+            //                 mini = Math.min(mini,nums[i][j]);
+            //             }
+            //         }
+            //     }
+            // }
+            // System.out.println(mini);
+
+        // Q Find the mini element out of all the max elements in each row 
+                
 
     }
 }
