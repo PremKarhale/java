@@ -1,3 +1,6 @@
+
+import java.util.ArrayList;
+
 // Taking input for 2D Array !!
 
 public class twoDArray {
@@ -9,7 +12,7 @@ public class twoDArray {
         // int col = sc.nextInt();
 
         // int [][] nums = new int[rows][col]; // initialising the 2D Array.
-        int[][] nums = {{1, 2,4}, {3, 4,0},{1,2,9}}; // 3 X 3
+        int[][] nums = {{3,11,10}, {3, 4,0},{1,2,9}}; // 3 X 3
 
         // // input 
         // for(int i=0;i<nums.length;i++){
@@ -89,7 +92,36 @@ public class twoDArray {
             // System.out.println(mini);
 
         // Q Find the mini element out of all the max elements in each row 
+                ArrayList<Integer> list = new ArrayList<>();
                 
+                for(int i=0;i<nums.length;i++){
+                    int max = Integer.MIN_VALUE;
+                    for(int j=0;j<nums[0].length;j++){                 // math.max lena hi padega 
+                        for(int k=0;k<nums[0].length;k++){
+                            if(nums[i][j] > nums[i][k]){
+                                max = Math.max(max,nums[i][j]);
+                            }
+                        }
+                    }
+                    list.add(max);
+                    
+                }
+                System.out.println(list);
+                // dynamic array 
+                int arr[] = new int[list.size()];
+               for(int i=0;i<list.size();i++){
+                    arr[i] = list.get(i);
+               }
+
+               int mini =Integer.MAX_VALUE;
+               for(int i=0;i<arr.length;i++){
+                for(int j=0;j<arr.length;j++){
+                    if(arr[i]<arr[j]){
+                        mini = Math.min(mini,arr[i]);
+                    }
+                }
+               }
+               System.out.println(mini);
 
     }
 }
