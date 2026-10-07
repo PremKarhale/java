@@ -143,21 +143,35 @@ public class twoDArray {
 
         // }
 
-        // Q Reverse all rows of a given matrix 
-        // for(int i=0;i<nums.length;i++){
-        //     for(int j=nums[0].length-1;j>=0;j--){
-        //         System.out.print(nums[i][j]+" ");
-        //     }
-        //     System.out.println();
-        // }
-
-        // Q Snake print coloumn wise 
-        
-        for(int j=0;j<nums[0].length;j++){
-            for(int i=0;i<nums.length;i++){
+        // Q Reverse all rows of a given matrix and then reverse their cols 
+        for(int i=0;i<nums.length;i++){
+            for(int j=nums[0].length-1;j>=0;j--){
                 System.out.print(nums[i][j]+" ");
             }
             System.out.println();
         }
+        System.out.println();
+        for(int j=0;j<nums[0].length;j++){
+            for(int i=nums.length-1;i>=0;i--){
+                System.out.print(nums[i][j]+" ");
+            }
+            System.out.println();
+        }
+
+        // Q Snake print coloumn wise 
+        
+        // for(int j=0;j<nums[0].length;j++){  // to print the matrix col wise we just have to reverse the i and j !!
+        //     if(j%2==0){
+        //         for(int i=0;i<nums.length;i++){
+        //         System.out.print(nums[i][j]+" ");
+        //     }
+        //     }else{
+        //         for(int i=nums.length-1;i>=0;i--){
+        //             System.out.print(nums[i][j]+" ");
+        //         }
+        //     }
+        //     System.out.println();
+            
+        // }
     }
 }
