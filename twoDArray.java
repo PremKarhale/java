@@ -24,6 +24,7 @@ public class twoDArray {
             }
             System.out.println();
         }
+        System.out.println();
 
 // Take a matrix as input from the user. Search for a given number X and print the indices at which it occurs 
         // for(int i=0;i<rows;i++){
@@ -143,12 +144,20 @@ public class twoDArray {
         // }
 
         // Q Reverse all rows of a given matrix 
-        for(int i=0;i<nums.length;i++){
-            for(int j=nums[0].length-1;j>=0;j--){
+        // for(int i=0;i<nums.length;i++){
+        //     for(int j=nums[0].length-1;j>=0;j--){
+        //         System.out.print(nums[i][j]+" ");
+        //     }
+        //     System.out.println();
+        // }
+
+        // Q Snake print coloumn wise 
+        
+        for(int j=0;j<nums[0].length;j++){
+            for(int i=0;i<nums.length;i++){
                 System.out.print(nums[i][j]+" ");
             }
             System.out.println();
         }
-
     }
 }
