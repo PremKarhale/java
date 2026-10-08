@@ -179,16 +179,48 @@ public class twoDArray {
         // 3 4 0 
         // 1 2 9 
 
+        // for(int i=0;i<nums.length;i++){
+        //     for(int j=i+1;j<nums[0].length;j++){
+        //         int temp = nums[i][j];
+        //         nums[i][j] = nums[j][i];
+        //         nums[j][i] = temp;
+        //     }
+        // }
+        // for(int i=0;i<nums.length;i++){
+        //     for(int j=0;j<nums[0].length;j++){
+        //         System.out.print(nums[i][j] + " ");
+        //     }
+        //     System.out.println();
+        // }s
+
+        // Q Rotate the matrix to the 90 degrees 
+         // 3 11 10 
+        // 3 4 0 
+        // 1 2 9 
+        // for(int i=0;i<nums.length;i++){
+        //     for(int j=0;j<nums[0].length;j++){
+        //         nums[i][j]=nums[j][(nums.length-1)-i];
+        //     }
+        // }
+        // for(int i=0;i<nums.length;i++){
+        //     for(int j=0;j<nums[0].length;j++){
+        //         System.out.print(nums[i][j]+" ");
+        //     }
+        //     System.out.println();
+        // }
+
+        // Transpose 
         for(int i=0;i<nums.length;i++){
             for(int j=i+1;j<nums[0].length;j++){
                 int temp = nums[i][j];
-                nums[i][j] = nums[j][i];
+                nums[i][j]=nums[j][i];
                 nums[j][i] = temp;
             }
         }
+        // Reverse 
         for(int i=0;i<nums.length;i++){
-            for(int j=0;j<nums[0].length;j++){
-                System.out.print(nums[i][j] + " ");
+            for(int j=nums[0].length-1;j>=0;j--){
+                System.out.print(nums[i][j]+" ");
             }
             System.out.println();
         }
