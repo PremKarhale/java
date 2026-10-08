@@ -144,19 +144,19 @@ public class twoDArray {
         // }
 
         // Q Reverse all rows of a given matrix and then reverse their cols 
-        for(int i=0;i<nums.length;i++){
-            for(int j=nums[0].length-1;j>=0;j--){
-                System.out.print(nums[i][j]+" ");
-            }
-            System.out.println();
-        }
-        System.out.println();
-        for(int j=0;j<nums[0].length;j++){
-            for(int i=nums.length-1;i>=0;i--){
-                System.out.print(nums[i][j]+" ");
-            }
-            System.out.println();
-        }
+        // for(int i=0;i<nums.length;i++){
+        //     for(int j=nums[0].length-1;j>=0;j--){
+        //         System.out.print(nums[i][j]+" ");
+        //     }
+        //     System.out.println();
+        // }
+        // System.out.println();
+        // for(int j=0;j<nums[0].length;j++){
+        //     for(int i=nums.length-1;i>=0;i--){
+        //         System.out.print(nums[i][j]+" ");
+        //     }
+        //     System.out.println();
+        // }
 
         // Q Snake print coloumn wise 
         
@@ -173,5 +173,24 @@ public class twoDArray {
         //     System.out.println();
             
         // }
+
+        // Q Transpose of a matrix 
+        // 3 11 10 
+        // 3 4 0 
+        // 1 2 9 
+
+        for(int i=0;i<nums.length;i++){
+            for(int j=i+1;j<nums[0].length;j++){
+                int temp = nums[i][j];
+                nums[i][j] = nums[j][i];
+                nums[j][i] = temp;
+            }
+        }
+        for(int i=0;i<nums.length;i++){
+            for(int j=0;j<nums[0].length;j++){
+                System.out.print(nums[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 }
