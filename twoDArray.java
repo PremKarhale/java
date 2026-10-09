@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class twoDArray {
 
@@ -210,17 +211,44 @@ public class twoDArray {
         // }
 
         // Transpose 
-        for(int i=0;i<nums.length;i++){
-            for(int j=i+1;j<nums[0].length;j++){
-                int temp = nums[i][j];
-                nums[i][j]=nums[j][i];
-                nums[j][i] = temp;
-            }
-        }
-        // Reverse 
-        for(int i=0;i<nums.length;i++){
-            for(int j=nums[0].length-1;j>=0;j--){
-                System.out.print(nums[i][j]+" ");
+        // for(int i=0;i<nums.length;i++){
+        //     for(int j=i+1;j<nums[0].length;j++){
+        //         int temp = nums[i][j];
+        //         nums[i][j]=nums[j][i];
+        //         nums[j][i] = temp;
+        //     }
+        // }
+        // // Reverse 
+        // for(int i=0;i<nums.length;i++){
+        //     for(int j=nums[0].length-1;j>=0;j--){
+        //         System.out.print(nums[i][j]+" ");
+        //     }
+        //     System.out.println();
+        // }
+
+        // 2D Array List 
+        ArrayList<Integer> a = new ArrayList<>();  // --> {1,2,3}
+        a.add(1); a.add(2);a.add(3);
+        ArrayList<Integer> b = new ArrayList<>();   // -->{2,5,6,9}
+        b.add(2);b.add(5);b.add(6);b.add(9);
+
+        //2D Array List create kardi 
+        ArrayList<ArrayList<Integer>> arr = new ArrayList<>(); //[[1, 2, 3], [2, 5, 6, 9]]
+        arr.add(a);arr.add(b);
+
+        // System.out.println(arr);
+        // Iterate on the 2D array list 
+        // for(int i=0;i<arr.size();i++){
+        //     for(int j=0;j<arr.get(i).size();j++){
+        //         System.out.print(arr.get(i).get(j) +" ");
+        //     }
+        //     System.out.println();
+        // }
+
+        // using foreach loop 
+        for(ArrayList<Integer> list:arr){
+            for(int ele :list){
+                System.out.print(ele);
             }
             System.out.println();
         }
