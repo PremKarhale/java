@@ -245,6 +245,7 @@ public class twoDArray {
         //     System.out.println();
         // }
 
+        
         // using foreach loop 
         for(ArrayList<Integer> list:arr){
             for(int ele :list){
