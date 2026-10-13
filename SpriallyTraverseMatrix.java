@@ -16,7 +16,7 @@ public class SpriallyTraverseMatrix {
             fr++;
             if(fr > lr || fc >lc) break;
             for(int i=fr;i<=lr;i++){
-                list.add(nums[i][lr]);
+                list.add(nums[i][lc]);
             }
             lc--;
             if(fr > lr || fc >lc) break;
@@ -26,7 +26,7 @@ public class SpriallyTraverseMatrix {
             lr--;
             if(fr > lr || fc >lc) break;
             for(int i=lr;i>=fr;i--){
-                list.add(nums[lr][fc]);
+                list.add(nums[i][fc]);
             }
             fc++;
         }
