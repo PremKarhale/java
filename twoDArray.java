@@ -9,7 +9,7 @@ public class twoDArray {
         // int col = sc.nextInt();
 
         // int [][] nums = new int[rows][col]; // initialising the 2D Array.
-        int[][] nums = {{3, 11, 10}, {3, 4, 0}, {1, 2, 9}}; // 3 X 3
+        // int[][] nums = {{3, 11, 10}, {3, 4, 0}, {1, 2, 9}}; // 3 X 3
 
         // // input 
         // for(int i=0;i<nums.length;i++){
@@ -19,13 +19,13 @@ public class twoDArray {
         //     }
         // }
         // output 
-        for (int i = 0; i < nums.length; i++) {
-            for (int j = 0; j < nums[0].length; j++) {
-                System.out.print(nums[i][j] + " ");
-            }
-            System.out.println();
-        }
-        System.out.println();
+        // for (int i = 0; i < nums.length; i++) {
+        //     for (int j = 0; j < nums[0].length; j++) {
+        //         System.out.print(nums[i][j] + " ");
+        //     }
+        //     System.out.println();
+        // }
+        // System.out.println();
 
 // Take a matrix as input from the user. Search for a given number X and print the indices at which it occurs 
         // for(int i=0;i<rows;i++){
@@ -114,6 +114,7 @@ public class twoDArray {
         //     }
         //    }
         //    System.out.println(mini);
+
         // For each loop in 2D array
         // for(int i=0;i<nums.length;i++){  //nums.length = 3
         //     for(int ele : nums[i]){
@@ -152,9 +153,10 @@ public class twoDArray {
         //     System.out.println();
         // }
         // System.out.println();
+        // // col reverse 
         // for(int j=0;j<nums[0].length;j++){
         //     for(int i=nums.length-1;i>=0;i--){
-        //         System.out.print(nums[i][j]+" ");
+        //         System.out.print(nums[j][i]+" ");
         //     }
         //     System.out.println();
         // }
@@ -227,14 +229,14 @@ public class twoDArray {
         // }
 
         // 2D Array List 
-        ArrayList<Integer> a = new ArrayList<>();  // --> {1,2,3}
-        a.add(1); a.add(2);a.add(3);
-        ArrayList<Integer> b = new ArrayList<>();   // -->{2,5,6,9}
-        b.add(2);b.add(5);b.add(6);b.add(9);
+        // ArrayList<Integer> a = new ArrayList<>();  // --> {1,2,3}
+        // a.add(1); a.add(2);a.add(3);
+        // ArrayList<Integer> b = new ArrayList<>();   // -->{2,5,6,9}
+        // b.add(2);b.add(5);b.add(6);b.add(9);
 
-        //2D Array List create kardi 
-        ArrayList<ArrayList<Integer>> arr = new ArrayList<>(); //[[1, 2, 3], [2, 5, 6, 9]]
-        arr.add(a);arr.add(b);
+        // //2D Array List create kardi 
+        // ArrayList<ArrayList<Integer>> arr = new ArrayList<>(); //[[1, 2, 3], [2, 5, 6, 9]]
+        // arr.add(a);arr.add(b);
 
         // System.out.println(arr);
         // Iterate on the 2D array list 
@@ -247,11 +249,14 @@ public class twoDArray {
 
         
         // using foreach loop 
-        for(ArrayList<Integer> list:arr){
-            for(int ele :list){
-                System.out.print(ele);
-            }
-            System.out.println();
-        }
+        // for(ArrayList<Integer> list:arr){
+        //     for(int ele :list){
+        //         System.out.print(ele);
+        //     }
+        //     System.out.println();
+        // }
+
+        // Q sprially traverse the matrix 
+        
     }
 }
