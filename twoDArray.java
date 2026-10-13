@@ -257,7 +257,7 @@ public class twoDArray {
         // }
 
         // Q sprially traverse the matrix 
-          int[][] nums = {{3, 11, 10}, {3, 4, 0}, {1, 2, 9},{6,5,7}}; // 3 X 3
+        //  -- on a sperate file SpriallyTraverseMatrix.java
           
         
     }
