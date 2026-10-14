@@ -19,7 +19,10 @@ class Recursion{
 
     // Q Print Decreasing or Increasing  5432112345
     public static void ans(int n){
-        if(n==0)return;
+        if(n==1){
+            System.out.println(n);
+            return;
+        }
         System.out.println(n);
         ans(n-1);
         System.out.println(n);
