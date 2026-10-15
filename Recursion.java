@@ -18,20 +18,29 @@ class Recursion{
     // }
 
     // Q Print Decreasing or Increasing  5432112345
-    public static void ans(int n){
-        if(n==1){
-            System.out.println(n);
-            return;
-        }
-        System.out.println(n);
-        ans(n-1);
-        System.out.println(n);
+    // public static void ans(int n){
+    //     if(n==1){
+    //         System.out.println(n);
+    //         return;
+    //     }
+    //     System.out.println(n);
+    //     ans(n-1);
+    //     System.out.println(n);
         
+    // }
+
+    // Q Find factorial of a no 
+    public static int factorial(int n){
+        // if(n==0||n==1) return 1;
+        // int ans = n*factorial(n-1);
+        // return ans ;
+        return (n<=1) ? 1:n*factorial(n-1);
     }
 
 
     public static void main(String args[]){
-        ans(5);
+        // ans(5);
+        System.out.println(factorial(4));
         
     }
 }
