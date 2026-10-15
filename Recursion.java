@@ -30,17 +30,27 @@ class Recursion{
     // }
 
     // Q Find factorial of a no 
-    public static int factorial(int n){
-        // if(n==0||n==1) return 1;
-        // int ans = n*factorial(n-1);
-        // return ans ;
-        return (n<=1) ? 1:n*factorial(n-1);
+    // public static int factorial(int n){
+    //     // if(n==0||n==1) return 1;
+    //     // int ans = n*factorial(n-1);
+    //     // return ans ;
+    //     // return (n<=1) ? 1:n*factorial(n-1);
+    // }
+
+    // Q A raised to the power of B 
+    public static int araisedtob(int a , int b){
+        int ans =1;
+        for(int i=0;i<b;i++){
+            ans *= a;
+        }
+        return ans;
     }
 
 
     public static void main(String args[]){
         // ans(5);
-        System.out.println(factorial(4));
+        // System.out.println(factorial(4));
+       System.out.println( araisedtob(2, 3));
         
     }
 }
