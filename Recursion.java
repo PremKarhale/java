@@ -37,12 +37,18 @@ class Recursion{
     //     // return (n<=1) ? 1:n*factorial(n-1);
     // }
 
-    // Q A raised to the power of B 
-    public static int araisedtob(int a , int b){
-        int ans =1;
-        for(int i=0;i<b;i++){
-            ans *= a;
-        }
+    // // Q A raised to the power of B 
+    // public static int araisedtob(int a , int b){
+    //     int ans =1;
+    //     for(int i=0;i<b;i++){
+    //         ans *= a;
+    //     }
+    //     return ans;
+    // }
+    // Using recursion A raised to the power B
+    public static int pow(int a , int b){
+        if(b==0)return 1; // base condition to stop the recursion 
+        int ans = a * pow(a,b-1);
         return ans;
     }
 
@@ -50,7 +56,8 @@ class Recursion{
     public static void main(String args[]){
         // ans(5);
         // System.out.println(factorial(4));
-       System.out.println( araisedtob(2, 3));
+    //System.out.println( araisedtob(2, 3));
+        System.out.println(pow(2, 3));
         
     }
 }
