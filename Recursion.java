@@ -46,18 +46,23 @@ class Recursion{
     //     return ans;
     // }
     // Using recursion A raised to the power B
-    public static int pow(int a , int b){
-        if(b==0)return 1; // base condition to stop the recursion 
-        int ans = a * pow(a,b-1);
-        return ans;
+    // public static int pow(int a , int b){
+    //     if(b==0)return 1; // base condition to stop the recursion 
+    //     int ans = a * pow(a,b-1);
+    //     return ans;
+    // }
+// Q fibonacci series using recursion
+    public static int fibonacci(int n){
+        if (n==0 || n==1) return n;
+        return fibonacci(n-1)+fibonacci(n-2);
     }
-
 
     public static void main(String args[]){
         // ans(5);
         // System.out.println(factorial(4));
     //System.out.println( araisedtob(2, 3));
-        System.out.println(pow(2, 3));
+        // System.out.println(pow(2, 3));
+        System.out.println(fibonacci(3));
         
     }
 }
